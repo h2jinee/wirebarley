@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ProjectMapper">
+    
+    <select id="getShopInfo" resultType="com.example.demo.dto.Shop">
+       SELECT *
+          FROM shop
+        WHERE shop_seq = #{shopSeq}
+    </select>
+    <select id="getEmployeeList" resultType="map">
+		SELECT *
+		FROM phone
+		WHERE shop_seq = #{shopSeq}
+	</select>
+   	<insert id="insertShop" useGeneratedKeys="true" keyProperty="model">
+		INSERT INTO shop (name, business_number, tel, kakao_id, status) VALUES
+		(#{name}, #{business_number}, #{tel}, #{kakao_id}, #{status})
+	</insert>
+   	<insert id="insertEmployee" useGeneratedKeys="true" keyProperty="model">
+		INSERT INTO employee (name, tel, kakao_id, status, shop_seq) VALUES
+		(#{name}, #{tel}, #{kakao_id}, #{status}, #{shop_seq})
+	</insert>
+	<delete id="deleteShop">
+		DELETE FROM shop
+		WHERE shop_seq=#{shopSeq}
+	</delete>
+    
+</mapper>
