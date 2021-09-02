@@ -12,6 +12,7 @@ package com.example.demo.quiz;
 ![img1](https://user-images.githubusercontent.com/19643716/131803631-fd467176-2f40-4c1d-b62c-5c3d84f4b5ef.JPG)
 
 ![img](https://user-images.githubusercontent.com/19643716/131803630-b2b47457-bbc7-41de-8100-e06376630b30.JPG)
+
 ![img2](https://user-images.githubusercontent.com/19643716/131803634-549007cc-bc48-47d0-9f1f-d11ada68a3df.JPG)
 
 ```
@@ -47,5 +48,8 @@ Mapper
 		WHERE shop_seq = #{shopSeq}
 </select>
 ```
-#### 고유 아이디 하나로 샵의 정보를 불러오고 샵에 등록된 직원 정보를 불러오기 위해서 Service에서 map을 통해 먼저 샵의 정보를 가져오고, List를 통해 샵에 등록된 직원의 정보를 가져오도록 했습니다.
+#### 고유 아이디 하나로 샵의 정보를 불러오고 샵에 등록된 직원 정보를 불러오기 위해서 Service에서 map을 통해 먼저 샵의 정보를 가져오고, 
+#### List를 통해 샵에 등록된 직원의 정보를 가져오도록 했습니다.
+
+
 
