@@ -5,6 +5,9 @@
 
 #### 설명 : 보통 id는 숫자형이 아닌 문자열로 가입하기 때문에 seq라는 auto incremental primary key를 추가하고 id(varchar)와 password(varchar) 컬럼을 추가했습니다.
 
+## Postman Api 명세서 확인 링크
+https://documenter.getpostman.com/view/17473786/U16krQzQ
+
 ## 2. 회원 가입 기능을 구현해주세요.
 ![api2](https://user-images.githubusercontent.com/19643716/132984004-ead030d5-fdfb-4c3a-9dfa-40ee1e83a6be.JPG)
 
