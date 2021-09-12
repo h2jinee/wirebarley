@@ -26,7 +26,7 @@ public class DemoApplication {
          
         sessionFactory.setConfigLocation(new ClassPathResource("mybatis-config.xml"));//spring boot mybatis settings 부분
          
-        Resource[] res =new PathMatchingResourcePatternResolver().getResources("classpath:mappers/*Mapper.xml");
+        Resource[] res =new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*Mapper.xml");
         sessionFactory.setMapperLocations(res);
          
         return sessionFactory.getObject();
