@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -48,7 +49,7 @@ public class MemberController {
 		return rData.toString();
 	}
 	
-	@PostMapping("/updatePassword")
+	@PutMapping("/updatePassword")
 	@ResponseBody
 	public String updatePassword(@RequestBody Map<String, Object> map) throws Exception {
 		JSONObject rData = new JSONObject();
